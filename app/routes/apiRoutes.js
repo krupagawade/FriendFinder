@@ -29,7 +29,7 @@ module.exports = function(app) {
                 diffTotal += Math.abs(newFriend.scores[j] - friendsData[i].scores[j]);
             } // end for - scores
             
-            //if different is 0 then is it 100% match. dont need to find for rest
+            //if difference is 0 then is it 100% match. dont need to find for rest
             if(diffTotal == 0){
                 DiffArray = {
                     name: friendsData[i].name,
